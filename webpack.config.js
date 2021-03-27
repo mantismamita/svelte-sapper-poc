@@ -4,6 +4,7 @@ const path = require('path');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
 const sveltePreprocess = require('svelte-preprocess');
+const postcssPresetEnv = require('postcss-preset-env');
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -36,7 +37,29 @@ module.exports = {
 								sourceMap: !prod,
 								postcss: {
 									plugins: [
-										require("postcss-nesting")
+										require('postcss-import')(),
+										require('postcss-mixins'),
+										require('autoprefixer'),
+										require('postcss-custom-media'),
+										require('postcss-custom-properties'),
+										postcssPresetEnv({
+											stage: 3,
+											features: {
+												'custom-media-queries': true,
+												'nesting-rules': true,
+											},
+											importFrom: [
+												'./src/assets/styles/__customMedia.css',
+												'./src/assets/styles/__customProperties.css'
+											],
+											exportTo: (customProperties, fileContent) => {
+												console.log(customProperties)
+											}
+										}),
+										require('postcss-global-nested')(),
+										require('cssnano')({
+											preset: 'default',
+										}),
 									],
 								},
 							}),

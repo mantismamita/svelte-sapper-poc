@@ -1,0 +1,111 @@
+/* stylelint-disable comment-empty-line-before */
+:root {
+  --opacity: 1;
+
+  /* Primary colors */
+  --brand-franceinter: rgba(226, 1, 52, var(--opacity));
+  --brand-franceinfo: rgba(255, 195, 0, var(--opacity));
+  --brand-francebleu: rgba(0, 120, 215, var(--opacity));
+  --brand-franceculture: rgba(118, 43, 132, var(--opacity));
+  --brand-francemusique: rgba(169, 0, 66, var(--opacity));
+  --brand-fip: rgba(226, 0, 122, var(--opacity));
+  --brand-mouv: rgba(93, 255, 166, var(--opacity));
+  --brand-radiofrance: rgba(0, 93, 203, var(--opacity));
+
+  /* Secondary colors */
+  --brand-franceinter-dark: rgb(180, 0, 41);
+
+  /* Accent colors */
+  --brand-franceinter-accent: rgb(212, 0, 81);
+  --brand-franceinfo-accent: rgb(255, 195, 0);
+  --brand-francebleu-accent: rgb(0, 135, 245);
+  --brand-franceculture-accent: rgb(168, 64, 186);
+  --brand-francemusique-accent: rgb(212, 0, 81);
+  --brand-fip-accent: rgb(250, 0, 133);
+  --brand-mouv-accent: rgb(93, 255, 166);
+  --brand-radiofrance-accent: rgb(0, 103, 230);
+
+  /* Deprecated Greyscale (in use) */
+  --color-grey-100: #f5f5f5;
+  --color-grey-300: #e0e0e0;
+  --color-grey-500: #9e9e9e;
+  --color-grey-700: #616161;
+  --color-black: rgb(00, 00, 00);
+
+  /* Greyscale */
+  --color-white: rgba(255, 255, 255, var(--opacity));
+  --color-grey-50: rgba(250, 250, 250, var(--opacity));
+  --color-grey-200: rgba(238, 238, 238, var(--opacity));
+  --color-grey-400: rgba(189, 189, 189, var(--opacity));
+  --color-grey-600: rgba(117, 117, 117, var(--opacity));
+  --color-grey-800: rgba(66, 66, 66, var(--opacity));
+  --color-grey-900: rgba(33, 33, 33, var(--opacity));
+
+  /* New colors notation */
+  --rgb-grey-50: 250, 250, 250;
+  --rgb-grey-200: 238, 238, 238;
+  --rgb-grey-400: 189, 189, 189;
+  --rgb-grey-800: 66, 66, 66;
+  --rgb-grey-900: 33, 33, 33;
+
+  /* Old DA */
+  --color-900-hover: #2e2e2e;
+  --color-error: #fbe8e9;
+  --color-error-hover: #f1dedf;
+
+  /* System */
+  --color-sys-error: rgba(152, 0, 27, var(--opacity));
+
+  /* theme */
+  /* header */
+  --theme-main-background: var(--rgb-grey-50);
+  --theme-header-background-opaque: var(--color-grey-900);
+  --theme-header-background-transluscent: rgba(var(--rgb-grey-900), 0.3);
+  --theme-station-list-subnav-background-opaque: var(--color-grey-200);
+  --theme-station-list-subnav-background-transluscent: rgba(var(--rgb-grey-800), 0.3);
+
+  /* Custom */
+  --color-direct: rgb(255, 31, 31);
+  --header-background: var(--theme-header-background-opaque);
+  --burger-toggle-color: var(--color-white);
+  --station-list-subnav-background: var(--theme-station-list-subnav-background-opaque);
+
+  /* Fonts */
+  --font-normal: "franklin_gothic_stdLight", sans-serif; /* franklingothicbook */
+  --font-medium: "franklin_gothic_stdMd", sans-serif; /* franklingothicmed */
+  --font-bold: "franklin_gothic_stdBold", sans-serif; /* franklingothicdemi */
+
+  /* Spacing */
+  --space: 8px; /* corresponds to the base gutter width in the grid. This is our principal unit of measurement */
+  --spacehalf: calc(var(--space) / 2);
+  --space2: calc(var(--space) * 2);
+  --space3: calc(var(--space) * 3);
+  --space4: calc(var(--space) * 4);
+  --space5: calc(var(--space) * 5);
+  --space6: calc(var(--space) * 6);
+  --space7: calc(var(--space) * 7);
+  --space8: calc(var(--space) * 8);
+
+  /* Heights */
+  --mobile-navbar-height: var(--space7);
+  --desktop-navbar-height: calc(10 * var(--space));
+  --mobile-player-height: var(--space7);
+  --tablet-player-height: calc(9 * var(--space));
+  --desktop-player-height: calc(10 * var(--space));
+
+  /* Shadows and Borders deprecated */
+  --shadow-primary: 0 4px 13px 0 rgba(0, 0, 0, 0.08);
+  --shadow-secondary: 0 7px 20px 0 rgba(0, 0, 0, 0.22);
+  --border-radius-small: 3px;
+
+  /* Shadows and Borders */
+  --primary-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.22);
+  --border-radius: 8px;
+
+  /* FontSize unit */
+  --font-unit: 4px;
+
+  /* Font sizes (t-shirt) */
+  --fs-m: 16px;
+}
+/* stylelint-enable comment-empty-line-before */
