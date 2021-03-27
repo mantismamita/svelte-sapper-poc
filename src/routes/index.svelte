@@ -1,5 +1,6 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+import successkid from 'images/successkid.jpg';
+import Button from '../components/Button/Button.svelte';
 </script>
 
 <svelte:head>
@@ -10,6 +11,7 @@
 
 <div class="TestIndex">
 	<h2>Test index</h2>
+	<Button />
 	<div class="TestIndex-inner">
 		<p>Test index inner</p>
 	</div>
